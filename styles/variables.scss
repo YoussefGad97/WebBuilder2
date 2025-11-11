@@ -1,0 +1,7 @@
+$color-primary: #1d4ed8;
+$canvas-bg: #f5f5f5;
+
+@mixin dark-mode {
+  --text-color: #f3f4f6;
+  --bg-color: #1f2937;
+}

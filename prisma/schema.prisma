@@ -1,0 +1,16 @@
+--- a/schema.prisma
++++ b/schema.prisma
+@@ -15,3 +15,12 @@
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
++
++model Project {
++  id        String   @id @default(cuid())
++  name      String
++  layoutTree Json
++  createdAt DateTime @default(now())
++}
++
++
+
