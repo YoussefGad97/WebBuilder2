@@ -10,6 +10,18 @@ export interface Component {
   children?: Component[]; // Support nested components
   parentId?: string | null; // To track parent in the tree
   layout?: 'section' | 'row' | 'column' | 'content'; // Distinguish layout components
+  // Styling properties editable from properties panel
+  width?: string;
+  height?: string;
+  margin?: string;
+  padding?: string;
+  backgroundColor?: string;
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  borderRadius?: string;
+  border?: string;
+  boxShadow?: string;
 }
 
 interface BuilderState {
